@@ -1,0 +1,10 @@
+      List<Itinerary> list = new ArrayList();    
+      list = Arrays.asList(searchResults);
+      Collections.sort(list, new ItineraryComparator());
+
+      for (int i = 0; i < countOfItineraries; i++)
+      {
+        resultStr += "Itinerary " + i + ": ";
+        resultStr += list.get(i).toString();
+      }
+      
